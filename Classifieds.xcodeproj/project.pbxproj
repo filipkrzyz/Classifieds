@@ -123,7 +123,7 @@
 				DC37CC8F239D6B6C0038A09A /* View */,
 				DC37CC90239D6B720038A09A /* Controller */,
 				DC37CC98239D6F930038A09A /* Helpers */,
-				DC37CC9B239D71B30038A09A /* SQLITE */,
+				DC37CCA8239D7C260038A09A /* SQLite */,
 				DC37CC67239D6A650038A09A /* Assets.xcassets */,
 				DC37CC6C239D6A650038A09A /* Info.plist */,
 			);
@@ -193,12 +193,12 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		DC37CC9B239D71B30038A09A /* SQLITE */ = {
+		DC37CCA8239D7C260038A09A /* SQLite */ = {
 			isa = PBXGroup;
 			children = (
 				DC37CC9C239D71DA0038A09A /* SQLiteManager.swift */,
 			);
-			path = SQLITE;
+			path = SQLite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
