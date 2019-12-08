@@ -17,6 +17,10 @@
 		DC37CC95239D6E9D0038A09A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DC37CC94239D6E9D0038A09A /* libsqlite3.tbd */; };
 		DC37CC97239D6F5B0038A09A /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC37CC96239D6F5B0038A09A /* CustomImageView.swift */; };
 		DC37CC9A239D6FA80038A09A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC37CC99239D6FA80038A09A /* Extensions.swift */; };
+		DC37CC9D239D71DA0038A09A /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC37CC9C239D71DA0038A09A /* SQLiteManager.swift */; };
+		DC37CC9F239D73180038A09A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC37CC9E239D73180038A09A /* Category.swift */; };
+		DC37CCA1239D73D90038A09A /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC37CCA0239D73D90038A09A /* CustomCell.swift */; };
+		DC37CCA3239D747F0038A09A /* JsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC37CCA2239D747F0038A09A /* JsonModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		DC37CC94239D6E9D0038A09A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		DC37CC96239D6F5B0038A09A /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		DC37CC99239D6FA80038A09A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DC37CC9C239D71DA0038A09A /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
+		DC37CC9E239D73180038A09A /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		DC37CCA0239D73D90038A09A /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		DC37CCA2239D747F0038A09A /* JsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +119,7 @@
 				DC37CC8F239D6B6C0038A09A /* View */,
 				DC37CC90239D6B720038A09A /* Controller */,
 				DC37CC98239D6F930038A09A /* Helpers */,
+				DC37CC9B239D71B30038A09A /* SQLITE */,
 				DC37CC67239D6A650038A09A /* Assets.xcassets */,
 				DC37CC6C239D6A650038A09A /* Info.plist */,
 			);
@@ -138,6 +147,8 @@
 		DC37CC8E239D6B160038A09A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DC37CC9E239D73180038A09A /* Category.swift */,
+				DC37CCA2239D747F0038A09A /* JsonModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -146,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				DC37CC96239D6F5B0038A09A /* CustomImageView.swift */,
+				DC37CCA0239D73D90038A09A /* CustomCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -173,6 +185,14 @@
 				DC37CC99239D6FA80038A09A /* Extensions.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DC37CC9B239D71B30038A09A /* SQLITE */ = {
+			isa = PBXGroup;
+			children = (
+				DC37CC9C239D71DA0038A09A /* SQLiteManager.swift */,
+			);
+			path = SQLITE;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,8 +328,12 @@
 				DC37CC9A239D6FA80038A09A /* Extensions.swift in Sources */,
 				DC37CC5F239D6A610038A09A /* AppDelegate.swift in Sources */,
 				DC37CC61239D6A610038A09A /* SceneDelegate.swift in Sources */,
+				DC37CCA1239D73D90038A09A /* CustomCell.swift in Sources */,
+				DC37CCA3239D747F0038A09A /* JsonModel.swift in Sources */,
+				DC37CC9D239D71DA0038A09A /* SQLiteManager.swift in Sources */,
 				DC37CC92239D6E100038A09A /* WelcomeVC.swift in Sources */,
 				DC37CC97239D6F5B0038A09A /* CustomImageView.swift in Sources */,
+				DC37CC9F239D73180038A09A /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
