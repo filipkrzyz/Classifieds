@@ -23,6 +23,7 @@
 		DC37CCA3239D747F0038A09A /* JsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC37CCA2239D747F0038A09A /* JsonModel.swift */; };
 		DC37CCA5239D7AAC0038A09A /* ImagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC37CCA4239D7AAC0038A09A /* ImagesVC.swift */; };
 		DC37CCA7239D7B330038A09A /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC37CCA6239D7B330038A09A /* DetailsVC.swift */; };
+		DC37CCAB239D7C8A0038A09A /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC37CCAA239D7C8A0038A09A /* APIRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		DC37CCA2239D747F0038A09A /* JsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonModel.swift; sourceTree = "<group>"; };
 		DC37CCA4239D7AAC0038A09A /* ImagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesVC.swift; sourceTree = "<group>"; };
 		DC37CCA6239D7B330038A09A /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		DC37CCAA239D7C8A0038A09A /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +125,8 @@
 				DC37CC8F239D6B6C0038A09A /* View */,
 				DC37CC90239D6B720038A09A /* Controller */,
 				DC37CC98239D6F930038A09A /* Helpers */,
-				DC37CCA8239D7C260038A09A /* SQLite */,
+				DC37CCA8239D7C260038A09A /* SQLITE */,
+				DC37CCA9239D7C660038A09A /* Networking */,
 				DC37CC67239D6A650038A09A /* Assets.xcassets */,
 				DC37CC6C239D6A650038A09A /* Info.plist */,
 			);
@@ -193,12 +196,20 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		DC37CCA8239D7C260038A09A /* SQLite */ = {
+		DC37CCA8239D7C260038A09A /* SQLITE */ = {
 			isa = PBXGroup;
 			children = (
 				DC37CC9C239D71DA0038A09A /* SQLiteManager.swift */,
 			);
-			path = SQLite;
+			path = SQLITE;
+			sourceTree = "<group>";
+		};
+		DC37CCA9239D7C660038A09A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DC37CCAA239D7C8A0038A09A /* APIRequest.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +343,7 @@
 			files = (
 				DC37CCA5239D7AAC0038A09A /* ImagesVC.swift in Sources */,
 				DC37CCA7239D7B330038A09A /* DetailsVC.swift in Sources */,
+				DC37CCAB239D7C8A0038A09A /* APIRequest.swift in Sources */,
 				DC37CC63239D6A610038A09A /* CategoriesVC.swift in Sources */,
 				DC37CC9A239D6FA80038A09A /* Extensions.swift in Sources */,
 				DC37CC5F239D6A610038A09A /* AppDelegate.swift in Sources */,

@@ -121,4 +121,25 @@ class SQLiteManager {
         return categories
     }
     
+    
+    /// Updates number of clicks for a particular category in the sql database
+    /// - Parameters:
+    ///   - id: the unique id of category in the table in the database
+    ///   - clicks: integer - the new number of clicks
+    func updateClicks(id: Int, clicks: Int) {
+        let updateStatementString = "UPDATE Categories SET Clicks = \(clicks) WHERE ID = \(id);"
+        
+        var updateStatement: OpaquePointer? = nil
+        
+        if sqlite3_prepare_v2(sqliteDB, updateStatementString, -1, &updateStatement, nil) == SQLITE_OK {
+            if sqlite3_step(updateStatement) == SQLITE_DONE {
+                print("Successfully updated clicks.")
+            } else {
+                print("Could not update clicks.")
+            }
+        } else {
+            print("UPDATE statement could not be prepared")
+        }
+        sqlite3_finalize(updateStatement)
+    }
 }
