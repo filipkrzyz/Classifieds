@@ -126,6 +126,7 @@
 				DC37CC90239D6B720038A09A /* Controller */,
 				DC37CC98239D6F930038A09A /* Helpers */,
 				DC37CCA9239D7C660038A09A /* Networking */,
+				DC37CCAC239E5AF70038A09A /* SQLite */,
 				DC37CC67239D6A650038A09A /* Assets.xcassets */,
 				DC37CC6C239D6A650038A09A /* Info.plist */,
 			);
@@ -191,7 +192,6 @@
 			isa = PBXGroup;
 			children = (
 				DC37CC99239D6FA80038A09A /* Extensions.swift */,
-				DC37CC9C239D71DA0038A09A /* SQLiteManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -202,6 +202,14 @@
 				DC37CCAA239D7C8A0038A09A /* APIRequest.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		DC37CCAC239E5AF70038A09A /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				DC37CC9C239D71DA0038A09A /* SQLiteManager.swift */,
+			);
+			path = SQLite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
