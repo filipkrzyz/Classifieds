@@ -11,6 +11,7 @@ The application is composed of 2 main targets. A tracking target and a UI target
 * When user clicks one category, they are presented with a list of 12 images for that category, loaded from pixabay API.
 * Each of the items can be selected to see the detailed view of it
 
+Sometimes the Welcome screen might show a different favourite category than it is on the top of the list in the category list. This is happens when two categories have the same number of clicks hence both are "favourite".
 # Note
 I am aware that my code is not the best possible quality but since I am a junior developer and I have never worked as an iOS developer in a professional environment, I don't have much experience with writing a clean code that other developers read or with unit testing. Nevertheless, recognizing my weaknesses I am willing and eager to work on them and learn to become a proficient iOS developer. I believe having a chance to work among experienced developers would accelerate my growth and help transform my weaknesses into strengths faster.
 
