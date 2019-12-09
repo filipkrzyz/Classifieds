@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// Custom Cell with just an ImageView inside
 class CustomCell: UICollectionViewCell {
     
     var imageData: ImageData? {
@@ -50,7 +51,7 @@ class CustomCell: UICollectionViewCell {
     
 }
 
-
+/// Subclass of CustomCell which adds a label underneth the ImageView
 class CustomLabeledCell: CustomCell {
     
     var categoryName: String? {

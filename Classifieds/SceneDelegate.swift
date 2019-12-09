@@ -25,11 +25,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
         if launchedBefore  {
-            print("Not first launch.")
+            print("Non-first-time user.")
             viewController = WelcomeVC()
             navigationController = UINavigationController(rootViewController: viewController)
         } else {
-            print("First launch, setting UserDefault.")
+            print("First-time user.")
             viewController = CategoriesVC(collectionViewLayout: layout)
             navigationController = UINavigationController(rootViewController: viewController)
         }

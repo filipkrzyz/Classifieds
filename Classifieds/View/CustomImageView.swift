@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+/// Custom ImageView which provides a method for loading an image from a provided URL and displays activity indicator while the image is being loaded
 class CustomImageView: UIImageView {
     
     var imageUrlString: String?

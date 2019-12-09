@@ -20,6 +20,7 @@ class CategoriesVC: UICollectionViewController, UICollectionViewDelegateFlowLayo
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         sortCategories()
+        collectionView.reloadData()
     }
     
     override func viewDidLoad() {
@@ -34,6 +35,7 @@ class CategoriesVC: UICollectionViewController, UICollectionViewDelegateFlowLayo
         
         categories = sqliteManager.selectData()
         sortCategories()
+        collectionView.reloadData()
         fetchCategoriesImages()
     }
     
@@ -122,6 +124,7 @@ class CategoriesVC: UICollectionViewController, UICollectionViewDelegateFlowLayo
         
         navigationController?.pushViewController(imagesVC, animated: true)
         imagesVC.navigationItem.title = categories[indexPath.row].categoryName
+        sortCategories()
     }
     
     
@@ -129,7 +132,7 @@ class CategoriesVC: UICollectionViewController, UICollectionViewDelegateFlowLayo
     func sortCategories() {
         categories.sort { $0.clicks > $1.clicks }
         UserDefaults.standard.set(categories[0].categoryName, forKey: "favouriteCategory")
-        collectionView.reloadData()
+//        collectionView.reloadData()
     }
 }
 
